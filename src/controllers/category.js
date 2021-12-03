@@ -37,7 +37,7 @@ exports.addCategory = async (req,res) => {
         public_id: shortid.generate() + "-" + req.files.productPicture[i].name
       },
     ).then((result) => {categoryObj.categoryImage =  result.url})
-    process.env.API + '/public/' + req.file.filename;
+    '/public/' + req.file.filename;
   }
   if(req.body.parentId){
     categoryObj.parentId = req.body.parentId;
