@@ -105,6 +105,8 @@ exports.getCartItems = (req, res) => {
           };
         });
         res.status(200).json({ cartItems });
+      } else {
+        res.status(200).json({});
       }
     });
   //}
