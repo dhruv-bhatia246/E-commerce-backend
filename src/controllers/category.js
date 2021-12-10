@@ -104,3 +104,13 @@ exports.deleteCategories = async (req,res) => {
     res.status(400).json({message: "Something went wrong"});
   }
 }
+
+exports.getCategoryName = async (req,res) => {
+  Category.findOne({ _id : req.body.category })
+  .exec((error, categoryName) => {
+    if(error) return res.status(400).json({ error });
+    if(categoryName) {
+      res.status(200).json(categoryName);
+    }
+  })
+}
