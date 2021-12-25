@@ -29,7 +29,7 @@ exports.signup = (req, res) => {
     _user.save((error, user) => {
       if (error) {
         return res.status(400).json({
-          message: "Something went wrong",
+          message: {error},
         });
       }
 
