@@ -29,12 +29,15 @@ Support for promotional activities, such as managing discounts and featured prod
 **1. Programming Language & Frameworks**
 Node.js with Express.js for building a fast and scalable API server.
 React.js for improved developer experience and maintainability.
+
 **2. Database**
 MongoDB (NoSQL) for flexible and scalable data storage, using Mongoose for object data modeling.
+
 **3. Authentication & Security**
 JWT for stateless authentication.
 bcrypt for secure password hashing.
 CORS for enhanced security and cross-origin resource sharing.
+
 **4. Other Technologies & Tools**
 Cloudinary for storing product images.
 
